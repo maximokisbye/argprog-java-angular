@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 body {
     margin: 20px;
@@ -9,17 +10,48 @@ h1 {
     background-color: yellow;
     text-align: center;
     font-size: large;
+    margin-bottom: 10px;
 }
 h2 {
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
 }
-
 nav{
-    width: 25%;
-    display: inline;
+    float: left;
+    width: 20%;
+    max-width: 150px;
 }
 section {
-    display: block;
-    width: 60%;
-    border-left: 2px green;
+    float: left;
+    width: 50%;
+    border-left: 3px rgb(42, 170, 42) solid;
+    padding-left: 30px;
+}
+aside {
+    float: right;
+    width: 20%;
+    max-width: 250px;
+    text-align: right;
+    padding: 10px;
+    border: 4px green;
+    border-style: dashed;
+    padding: 0 20px 30px 20px;
+}
+ul {
+    list-style: none;
+}
+footer {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    display:inline-block;
+}
+address {
+    font-style: normal;
+}
+p {
+    margin: 12px 0 12px 0;
+}
+.fecha {
+    font-weight: 800;
 }
