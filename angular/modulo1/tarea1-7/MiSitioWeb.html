@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h3  style="margin-left:650px">Información sobre el Producto</h3>
+
+    <div class="container">
+        <div class="datos-basicos">
+            <p style="margin-top:-30px;margin-left:0px">Datos Básicos</p>
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="nombre">Nombre:</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="nombre" name="nombre" style="width: 330px;">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="descripcion">Descripción:</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <div class="input-group" style="display: flex; align-items: center;margin-left: -115px;">
+                <div class="input-field">Foto:
+                    <input  id="foto" name="foto" style="width: 125px;">
+                    <button id="elegir-foto"style="margin-left:5px">Elegir...</button>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <!-- Agrega una clase especial "checkbox-original" al primer checkbox -->
+                <input type="checkbox" id="contador-vistas" name="contador-vistas" class="checkbox-original">
+                <label for="contador-vistas" style="margin-top:-17px;margin-left:25px">Añadir contador de vistas</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de Datos Económicos -->
+    <div class="container datos-economicos">
+        <p style="margin-top:-30px;margin-left:0px">Datos Económicos</p>
+        <div class="input-group">
+            
+            <div class="input-field">Precio:
+                <input type="text" id="precio" name="precio">
+                <span style="margin-left:5px">&euro;</span>
+            </div>
+            <div class="input-group" style="margin-left: 150px; margin-top: -20px;">
+                <label for="impuestos">Impuestos:</label>
+                <div class="input-field"style="margin-left: 80px; margin-top: -20px;">
+                    <select id="impuestos" name="impuestos">
+                        <option value="4%">4%</option>
+                        <option value="7%">7%</option>
+                        <option value="14%">14%</option>
+                        <option value="21%">21%</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="promocion">Promoción:</label>
+                <div>
+                    <input type="radio" id="ninguno" name="promocion" value="Ninguno">
+                    <label for="ninguno">Ninguno</label>
+                </div>
+                <div>
+                    <input type="radio" id="transporte-gratuito" name="promocion" value="Transporte Gratuito">
+                    <label for="transporte-gratuito">Transporte Gratuito</label>
+                </div>
+                <div>
+                    <input type="radio" id="descuento-5" name="promocion" value="Descuento 5%">
+                    <label for="descuento-5">Descuento 5%</label>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

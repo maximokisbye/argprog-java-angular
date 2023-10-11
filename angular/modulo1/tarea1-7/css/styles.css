@@ -1,0 +1,11 @@
+form {
+    width: 40%;
+}
+.falla input, .falla textarea{
+    border: 0.2px solid;
+    border-color: #fe5f55;
+}
+.ok input, .ok textarea{
+    border: 0.1px solid;
+    border-color: darkgreen;
+}

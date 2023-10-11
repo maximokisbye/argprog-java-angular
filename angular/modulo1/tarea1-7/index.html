@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="validar.js"></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <b>Informacion sobre el producto</b>
+    <!-- <form id="formulario" method="POST" > -->
+        <form action="MiSitioWeb.html" id="formulario" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos basicos</legend>
+            <div class="control">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre">
+                <span></span>
+            </div>
+            
+            <div class="control">
+                <label for="descripcion">Descripcion</label><br>
+                <textarea id="descripcion" name="descripcion"></textarea>
+                <span></span>
+            </div> 
+            <label for="foto">Foto</label>
+            <input type="file" name="file" id="file"><br>
+
+
+        <input type="checkbox" name="visitas" id="visitas"><label for="visitas">Añadir contador de visitas</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos economicos</legend>
+            <div class="control">
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio">€
+                <span></span>
+            </div>
+            <label for="impuestos">Impuestos</label>            
+            <select name="impuestos" id="impuestos">
+                <option value="4" >4%</option>
+                <option value="7" >7%</option>
+                <option value="16" >16%</option>
+                <option value="25" >25%</option>
+            </select><br><br>
+            <div class="control">
+                <label for="promocion">Promocion</label>  
+                <br>
+                <input type="radio" id="promo1" name="promo" value="1"><label for="promo1" >Ninguno</label><br>
+                <input type="radio" id="promo2" name="promo" value="2"><label for="promo2">Transporte gratuito</label><br>
+                <input type="radio" id="promo3" name="promo" value="3"><label for="promo3">Descuento 5%</label><br>
+                <span></span>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 550px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+textarea {
+    overflow: auto;
+    width: 350px;
+    height: 70px;
+    max-height: 150px;  
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+}
+#precio{
+    width: 20%;
+}
+
+.input-label {
+    margin-bottom: 5px; 
+}
+
+.input-group .input-field > * {
+    margin-right: 0px; 
+}
+
+label input[type="checkbox"] + span,
+label input[type="radio"] + span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+label input[type="checkbox"]:checked + span::before,
+label input[type="radio"]:checked + span::before {
+    content: "\2713";
+    font-size: 12px;
+    color: #007bff;
+    text-align: center;
+    line-height: 15px;
+}
