@@ -23,6 +23,9 @@ window.addEventListener("load", () => {
         }else if (!/^[A-Z]+$/i.test(nombreValor)){
             falla(nombre, "nombre contiene numeros");
 
+        }else if (nombreValor.length > 30){
+            falla(nombre, "nombre demasiado largo");
+
         }else{
             resultado = true;
             validado(nombre);
